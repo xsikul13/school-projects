@@ -1,0 +1,9 @@
+#projekt snt 2018, autor Vojtech Sikula (xsikul13)
+#
+#celkový čas testování cca 10h
+#
+#spuštění
+#bash run.sh
+#
+#spuštění nad datovou sadou sprint
+#v každém experimentu se provádí 5běhů nad každým soubore z testovací sady

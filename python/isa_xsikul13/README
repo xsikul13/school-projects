@@ -1,0 +1,14 @@
+nastroj pro monitorovani hrisniku: antipirat
+spusteni:
+  make
+  ./antipirat --help
+  ./antipirat -r https://kat.cr/movies/?rss=1 
+  ./antipirat -i testing_movies_announce.xml 
+  ./antipirat -t turbo.kid.2015.eng.720p.webrip.esub.tamilrockers.net.torrent -a http://tracker.tracker.pl/announce
+implementováno rozšíření -t
+při spuštění s parametrem -a se očekává URL ve stejné podobě jako v torrent soubru
+(např. -a http://tracker.trackerfix.com/announce)
+použita knihovna bencodepy - licence v souboru LICENCE-bencodepy
+timeout je nastaven na 8s, poté se spojeni ukonci a prejde se na dalsi tracker
+odevzdane soubory:
+antipirat.py3, Makefile, README, LICENCE-bencodepy, bencodepy/*, manual.pdf
